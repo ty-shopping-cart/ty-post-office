@@ -22,12 +22,13 @@ https://kafka.apache.org/downloads
 https://www.youtube.com/watch?v=EUzH9khPYgs
 
 ### Run Kafka
-.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+`.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties`
 
-.\bin\windows\kafka-server-start.bat .\config\server.properties
+`.\bin\windows\kafka-server-start.bat .\config\server.properties`
 
 Create Test Topic:
-.\bin\windows\kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic TestTopic
+
+`.\bin\windows\kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic TestTopic`
 
 ### Up Cassandra DB
 `docker pull cassandra`
